@@ -1,6 +1,5 @@
 import axios from "axios";
 import { SERVER_URL } from "../config";
-import { getGeolocation } from "../utils/commons";
 // Request interceptor for API calls
 const axiosApiInstance = axios.create();
 
