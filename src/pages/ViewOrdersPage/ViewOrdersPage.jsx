@@ -10,8 +10,7 @@ import {
 
 import { getAllOrders } from "../../redux/features/orders/ordersSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useCallback, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useCallback} from "react";
 import OrderStatusCard from "../../components/OrderStatusCard/OrderStatusCard";
 import { updateOrderStatus } from "../../redux/features/vendor/vendorSlice";
 

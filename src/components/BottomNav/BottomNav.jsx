@@ -2,7 +2,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { Flex, Stack, Text, Avatar, Box, Badge } from "@chakra-ui/react";
+import { Flex, Stack, Text, Avatar, Badge } from "@chakra-ui/react";
 import { Link, useLocation } from "react-router-dom";
 import { CartIcon, HomeIcon, ShopIcon, UserIcon } from "../Icons";
 import { useSelector } from "react-redux";

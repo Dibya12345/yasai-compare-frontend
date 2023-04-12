@@ -29,11 +29,7 @@ export const CartItemCard = (props) => {
       justify="space-between"
       align="center"
     >
-      <CartProductMeta
-        name={name}
-        description={description}
-        image={imageUrl}
-      />
+      <CartProductMeta name={name} description={description} image={imageUrl} />
 
       {/* Desktop */}
       <Flex

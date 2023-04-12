@@ -24,11 +24,8 @@ import {
   Input,
 } from "@chakra-ui/react";
 
-import _ from "lodash";
-
 const VendorInventoryPage = () => {
   const [name, setName] = useState("");
-  const [image, setImage] = useState("");
   const [image_link, setImage_link] = useState("");
   const [image_id, setImage_id] = useState("");
   const [address, setAddress] = useState("");
@@ -107,6 +104,7 @@ const VendorInventoryPage = () => {
     const data = new FormData();
     data.append("item", e.target.files[0]);
     const image = await uploadVendorImage(data);
+    console.log(image_id)
     setImage_link(image.response.url);
     setImage_id(image.response.fileId);
   };
@@ -127,14 +125,6 @@ const VendorInventoryPage = () => {
       longitude: longitude,
     });
   };
-
-  function displayImage() {
-    return (
-      <Box>
-        <Button width="full" variant="ghost" />
-      </Box>
-    );
-  }
 
   return (
     <>

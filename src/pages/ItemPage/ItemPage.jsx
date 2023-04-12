@@ -3,11 +3,10 @@ import { useParams } from "react-router-dom";
 import {
   fetchItemsByShopId,
   fetchShopsById,
-  addToCart,
 } from "../../redux/features/shop/shopSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useCallback } from "react";
-import { Box, SimpleGrid, Text } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import ItemCard from "../../components/ItemCard/ItemCard";
 import {
   fetchCartItems,
